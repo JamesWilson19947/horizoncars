@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Source+Sans Pro:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+    <script src='{{ site.baseurl }}/public/js/script.js'></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/cars.css">
+  </body>
+  <style>
+    div.car img {
+  height: 180px;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+  </style>
+</html>

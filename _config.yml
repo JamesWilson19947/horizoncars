@@ -1,0 +1,27 @@
+# Setup
+title:               Horizon Cars
+tagline:             'Search through all cars'
+description:         ''
+url:                 
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              
+  url:               
+  email:             
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
+
+collections:
+  cars:
+    output: true
+    sort_by: date

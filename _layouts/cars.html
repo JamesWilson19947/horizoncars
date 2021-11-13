@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="post">
+      <div>
+          <div class="car">
+           <center><h1 class="post-title">{{ page.name }}</h1>
+            <h3 class="carmake">{{ page.make }}</h3>
+            <img src="{{ page.image }}">
+          </center> 
+            <div class="rarity {{page.rarity}}"><h3 style="color:white">{{page.rarity}}</h3> </div>
+          </div>
+      </div>
+  </ul>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Stat</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rarity</td>
+            <td>{{ page.rarity }}</td>
+        </tr>
+        <tr>
+            <td>Cost</td>
+            <td>{{ page.cost }}</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+  {{ content }}
+</div>
+
+<style>
+.post-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-family: Source Sans Pro!important;
+  padding-top: 10px;
+}
+</style>
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Source+Sans Pro:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/cars.css">

@@ -1,0 +1,15 @@
+---
+---
+[
+  {% for car in site.cars %}
+    {
+
+      "name"     : "{{ car.name | strip_html | escape }}",
+      "url"      : "{{ site.baseurl }}{{ car.url }}",
+      "image"    : "{{  car.image }}",
+      "rarity"     : "{{ car.rarity }}",
+      "make"     : "{{ car.make }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
